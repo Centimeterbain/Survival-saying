@@ -4,7 +4,8 @@ function showalert(){
     alert("使用電腦進入網頁會有比較好的瀏覽體驗喔~");
   }
 
-npm install ./gsap-bonus.tgz;
+npm install ./gsap-bonus.tgz
+npm install gsap@npm:@gsap/member
 
 
 const tl = gsap.timeline({
