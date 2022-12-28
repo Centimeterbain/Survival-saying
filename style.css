@@ -1,0 +1,237 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #130d0a;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+}
+
+#hero {
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+#content {
+  background-color: #130d0a;
+}
+
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  position: fixed;
+  z-index: -1;
+}
+
+#hero-mobile {
+  display: none;
+  background: url("https://centimeterbain.github.io/survivalWeb/main vision.png") no-repeat center bottom/cover;
+  height: 320px;
+}
+
+.first-section {
+  padding: 50px 0 20px 0;
+}
+
+.text-header {
+  font-size: 50px;
+  text-align: center;
+}
+
+h1 {
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #ede0d5;
+  font-size: 1.3em;
+  line-height: 150%;
+}
+
+ano {
+  color: #ede0d5;
+  font-size: 0.9em;
+}
+
+#hero, .layer {
+  min-height: 800px;
+}
+
+.layer-bg {
+  background-image: url("https://centimeterbain.github.io/survivalWeb/bgpic/sky.png");
+}
+
+.layer-1 {
+  background-image: url("https://centimeterbain.github.io/survivalWeb/bgpic/tree.png");
+  background-position: left bottom;
+}
+
+.layer-2 {
+  background-image: url("https://centimeterbain.github.io/survivalWeb/bgpic/mountain.png");
+  background-position: left bottom;
+}
+
+/*領袖區*/
+/*領袖區*/
+.layer-4 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png");
+}
+
+.layer-overlay {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
+}
+
+@media only screen and (max-width: 768px) {
+  .layer-1 {
+    background-position: 26% bottom;
+  }
+
+  .layer-3 {
+    background-position: 35% bottom;
+  }
+}
+.story {
+  position: absolute;
+  top: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 10vw;
+  height: 40vh;
+}
+
+.title {
+  width: 48%;
+}
+
+.first-section {
+  background-image: url("https://centimeterbain.github.io/survivalWeb/them.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.third-section {
+  background-image: url("https://centimeterbain.github.io/survivalWeb/earth.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.warpic {
+  width: 70%;
+}
+
+.link {
+  display: flex;
+  height: 100vh;
+}
+
+.saying {
+  width: 75%;
+}
+
+.ending {
+  width: 50%;
+}
+
+.down {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+}
+
+.say {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 80%;
+  min-height: 50px;
+  z-index: 1;
+}
+
+.larrow {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.say:hover::after {
+  position: absolute;
+  left: 7.5vw;
+  bottom: 2vh;
+  z-index: 1;
+  color: #fff;
+  font-size: 0.8em;
+  background: #828183;
+  padding: 0px;
+  border-radius: 5px;
+  content: "點我去背景故事\a( •̀ ω •́ )✧";
+  white-space: pre;
+}
+
+.fin {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 30%;
+  min-height: 50px;
+  z-index: 1;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.fin:hover::after {
+  position: absolute;
+  left: 50%;
+  bottom: -3.5vh;
+  transform: translate(-50%);
+  z-index: 1;
+  color: #fff;
+  font-size: 0.8em;
+  background: #828183;
+  padding: 0px;
+  border-radius: 5px;
+  content: "點我回到首頁\a( •̀ ω •́ )✧";
+  white-space: pre;
+}
+
+.card {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 80%;
+  min-height: 50px;
+  z-index: 1;
+}
+
+.rarrow {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.card:hover::after {
+  position: absolute;
+  right: 7.5vw;
+  bottom: 2vh;
+  z-index: 1;
+  color: #fff;
+  font-size: 0.8em;
+  background: #828183;
+  padding: 0px;
+  border-radius: 5px;
+  content: "點我去卡牌介紹\a( •̀ ω •́ )✧";
+  white-space: pre;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survival-遊戲說明</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Signika+Negative:300,400,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://codepen.io/GreenSock/pen/ZEGdQLM/7ba936b34824fefdccfe2c6d9f0b740b.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+	<head>
+		<title>Survival-遊戲說明</title>
+		<meta charset="utf-8">
+	</head>
+
+<body onload="showalert()">
+<!--記得放到body裡喔 像這樣<body onload="showalert()"> -->
+<div id='hero'>
+  <div class='layer-bg layer parallax' data-depth='0.10'></div>
+  <div class='layer-1 layer parallax' data-depth='0.20'></div>
+  <div class='layer-2 layer parallax' data-depth='0.50'></div>
+<!--   <div class="play">
+  	<div class='layer-3 layer parallax' data-depth='0.80'></div>
+		<div class='layer-31 layer parallax' data-depth='0.80'></div>
+		<div class='layer-32 layer parallax' data-depth='0.80'></div>
+  </div> -->
+  <div class='layer-overlay layer parallax' data-depth='0.85'></div>
+  <div class='layer-4 layer parallax' data-depth='1.00'></div>
+</div>
+	
+	<div class="story">
+      <img class="title" src="https://centimeterbain.github.io/survivalWeb/title.png" alt="">
+      <div class=stword>遊戲說明</div>
+    </div>
+
+<div id='content'>
+  <div class='container'>
+    <section class='first-section'>
+      <div class='row'>
+        <div class='col-sm-6'>
+          <h1>桌遊介紹</h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-7'>
+          <p>在一片未知的大陸上，生存著的生物分成三大勢力-人類、動物、植物，在這片大陸上的一切未來尚且為謎……</p>
+<p>在桌遊裡玩家分別扮演著威廉、奇美拉、普蘭特三位領袖，操控著己方勢力在遊戲過程中與其他玩家進行土地的爭奪。</p>
+<p>數值的疊加、效果的觸發、技能的不同，交織形成了勢力間的競爭，還有多種的故事結局可供探索，是一款腦力與運氣缺一不可的桌遊。</p>
+
+        </div>
+      </div>
+    </section>
+		
+		<section class='second-section'>
+      <div class='row'>
+        <div class='col-sm-6'>
+          <h1>遊戲時間</h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-10'>
+          <p>總共進行10回合(約40-60分鐘)。</p>  
+		</div>
+        </div>
+			<div class='row'>
+        <div class='col-sm-6'>
+          <h1>遊戲目標</h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-10'>
+          <p>在這10回合內，佔領這片大陸最廣的區域，讓你的陣營可以成為這片陸地上的最大贏家！</p>  
+		</div>
+        </div>
+			    </section>
+		<section class='third-section'>
+      <div class='row'>
+        <div class='col-sm-6'>
+          <h1>遊戲前置作業</h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-7'>
+          <p>一、將地形標誌物面朝下隨機分配到地圖的空格中(不含初始領地)。全部分配好後將剩下的放置一旁，翻開所有地形標誌物。</p>
+<p>二、玩家各自選擇陣營後，依照<b style="color:orange;">植物➡動物➡人類</b>的順序選擇的初始領地，並放置領袖在該領地。</p>
+<p>三、將兵力卡、天氣卡、裝備卡洗好後放置一旁預備，玩家從各自的<b style="color:orange;">兵力牌</b>牌堆中，抽取<b style="color:orange;">5張</b>作為手牌。</p>  
+		</div>
+        </div>
+			    </section>
+		
+		<section class='fourth-section'>
+      <div class='row'>
+        <div class='col-sm-6'>
+          <h1>遊戲進行規則</h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-10'>
+          <p>動作順序為：植物➔動物➔人類。</p>
+<p>回合流程：<br>
+(第3、6、9回合抽取天氣卡，計算天氣效果)<br>
+➔計算/檢查地形效果(沼澤、高山)<br>
+➔抽牌(植物抽3張兵力牌、動物抽4張兵力牌、人類3張兵力1張裝備)<br>
+➔首領移動<br>
+➔使用卡牌（兵力、裝備）<br>
+➔戰鬥回合<br>
+➔兵力移動</p>
+<p>					
+回合結束：<br>
+若該玩家手牌大於6張(含裝備)，則必須<b style="color:orange;">捨棄手牌直到手牌剩餘6張以內。</b></p>  
+		</div>
+        </div>
+			    </section>
+		
+		<section class='fifth-section'>
+			<div class='row'>
+        <div class='col-sm-6'>
+          <h1>戰鬥規則</h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-10'>
+<p>相連格子不同陣營之領地可觸發戰鬥事件，防禦方兵力防禦加總減去攻擊方兵力的攻擊力加總，若攻擊方攻擊較高，即為攻擊成功。</p>
+	<p>反之即為攻擊失敗。成功方必須犧牲總和戰鬥數值大於等於失敗方之戰鬥數值總和的兵力。</p> 
+					<div class="inpic">			
+						<img class="warpic" src="https://centimeterbain.github.io/survivalWeb/war.png" alt="乖乖的戰鬥動畫">	<br>
+						<ano>動物(攻擊方)攻擊植物(防守方)，動物方攻擊力(8)>植物方防禦(3)。<br>
+						攻擊成功，攻擊方犧牲攻擊總和大於等於防守方防禦總和的兵力。<br>(犧牲兩隻豹，攻擊4，大於防守方的三株爬牆虎，防禦3)</ano>
+					</div>
+				</div>
+       </div>
+      <div class='row'>
+        <div class='col-sm-6'>
+          <h1>細項規則補充</h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-10'>
+<p>1.裝備卡：達成解鎖目標後可在人類回合使用，當回合生效。</p>
+<p>2.兵力卡：放置之兵力標誌物數量需<b style="color:orange;">小於等於使用</b>的兵力卡召喚數量。</p>
+<p>3.天氣卡：第3、6、9回合各抽取一張天氣卡。效果<b style="color:orange;">僅作用於自身領地</b>(特殊天氣除外)。天氣效果生效回合結束進入晴天。</p>
+<p>4.領袖：<b style="color:orange;">每回合只可占領一格新地點</b>。若領袖所在格子被佔領，則領袖退回最靠近的自己領地格子。</p>
+<p>5.兵力：<b style="color:orange;">每回合發動戰爭的佔領格子數不限，無法佔領沒有陣營的格子。</b>打架後可以接收對方佔領的該格格子。一格最多五單位兵力(特殊地形除外)。攻擊後的兵力無法再移動。</p>  
+		</div>
+        </div>
+			    </section>
+		
+		<section class='sixth-section'>
+      <div class='row'>
+        <div class='col-sm-6'>
+          <h1>結算方式</h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-10'>
+          <p>十回合結束後，計算領地數量，佔領領地較多者獲勝。若格子數有相同者，則為平手。</p> 
+					<p>每種不同的勝利，我們都設計了一個小小的故事。也許玩家們可以去看看，戰爭後這片大陸發生了些什麼？未來又會發展成什麼樣的故事？</p>
+
+		</div>
+        </div>
+			    </section>
+		
+				<section class='seventh-section'>
+      <div class='row'>
+        <div class='col-sm-6'>
+          <h1>說明書、結局書下載區</h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-10'>
+          <p>嫌棄紙本會弄髒弄破？</p> 
+					<p>我們也有提供可以線上閱讀的電子檔！</p>
+		</div>
+        </div>
+			    </section>
+		<div class="link">
+						<a href="https://issuu.com/centimeterbain.ncyu/docs/_" target="_blank"><img src="https://centimeterbain.github.io/survivalWeb/saying.png" alt="" class="saying"></a>
+						<a href="https://issuu.com/centimeterbain.ncyu/docs/_dbc4dcf06958a2" target="_blank"><img src="https://centimeterbain.github.io/survivalWeb/ending.png" alt="" class="ending"></a>
+					</div>
+		
+		
+<section class="pagedown">
+	<div class="down">
+
+      <a href="https://centimeterbain.github.io/Survival">
+        <div class="say">
+          <img class="larrow" src="https://centimeterbain.github.io/survivalWeb/l_arrow.png" alt="">
+        </div>
+      </a>
+
+      <a href="https://centimeterbain.github.io/Survival">
+        <div class="fin">
+          <img class="home" src="https://centimeterbain.github.io/survivalWeb/logo.png" alt="">
+        </div>
+      </a>
+
+      <a href="https://centimeterbain.github.io/Survival">
+        <div class="card">
+          <img class="rarrow" src="https://centimeterbain.github.io/survivalWeb/r_arrow.png" alt="">
+        </div>
+      </a>
+
+    </div>
+</section>
+
+	
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+<!-- partial -->
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.1/smooth-scrollbar.js'></script>
+<script src='https://assets.codepen.io/16327/ScrollSmoother.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
